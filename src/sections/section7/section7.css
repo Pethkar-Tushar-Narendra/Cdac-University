@@ -1,0 +1,133 @@
+.container7 {
+  width: 100vw;
+  position: relative;
+  color: var(--1st-color);
+  background-color: var(--2nd-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 0px;
+  padding-bottom: 200px;
+}
+.container7 .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.container7 .title {
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 3rem;
+  height: 40vh;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+}
+.container7 .title .name {
+  height: 20%;
+}
+.container7 .title .name .highlighter {
+  color: var(--3rd-color);
+}
+.container7 .title .text {
+  height: 30%;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.container7 .title .icon {
+  height: 50%;
+}
+.container7 .title .icon .animateicon {
+  color: var(--3rd-color);
+  animation: iconAnimate 1.5s linear infinite;
+  font-size: 3rem;
+}
+.container7 .content {
+  margin-top: 15px;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  z-index: 10;
+}
+.container7 .content .card {
+  width: 30%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  padding: 5px 15px;
+  justify-content: center;
+}
+.container7 .content .card .row1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+}
+.container7 .content .card .row1 .icon {
+  font-size: 3.5rem;
+}
+.container7 .content .card .row2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25%;
+  font-weight: 700;
+}
+.container7 .content .card .row3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25%;
+}
+.container7 .trans {
+  width: 100%;
+  background-image: url('../../images/graduation\ image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container7 .trans .color {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.381);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+.container7 .trans .color .text {
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+@media (max-width: 990px) {
+  .container7 {
+    padding-bottom: 80px;
+  }
+  .container7 .title {
+    font-size: 2rem;
+  }
+  .container7 .title .text {
+    font-size: 1rem;
+  }
+  .container7 .content .card {
+    width: 100%;
+  }
+  .container7 .trans .color .text {
+    width: 100%;
+  }
+}

@@ -1,0 +1,141 @@
+.container6 {
+  width: 100vw;
+  position: relative;
+  color: var(--1st-color);
+  background-color: var(--3rd-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 20px;
+  padding-bottom: 150px;
+}
+.container6 .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.container6 .title {
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 3rem;
+  height: 40vh;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+}
+.container6 .title .name {
+  height: 20%;
+}
+.container6 .title .name .highlighter {
+  color: var(--2nd-color);
+}
+.container6 .title .text {
+  height: 30%;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.container6 .title .icon {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.container6 .title .icon .animateicon {
+  color: var(--2nd-color);
+  animation: iconAnimate 1.5s linear infinite;
+  font-size: 3rem;
+}
+.container6 .content {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  z-index: 10;
+}
+.container6 .content .card {
+  position: relative;
+  width: 30%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid var(--1st-color);
+  transition: 0.5s;
+}
+.container6 .content .card .card1 {
+  position: absolute;
+  overflow: hidden;
+  height: 250px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  aspect-ratio: 1;
+  border: 1px solid var(--1st-color);
+  border-radius: 50%;
+  z-index: 10;
+}
+.container6 .content .card .card1 img {
+  height: 100%;
+  width: 100%;
+}
+.container6 .content .card .card2 {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 35%;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.container6 .content .card .card2 .icons {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 20%;
+  padding-top: 10px;
+  display: none;
+}
+.container6 .content .card:hover {
+  z-index: 100;
+  background-color: var(--2nd-color);
+  border: none;
+}
+.container6 .content .card:hover .card2 .icons {
+  display: flex;
+}
+.container6 .content .card .card2 .icons .icon {
+  cursor: pointer;
+}
+
+@media (max-width: 990px) {
+  .container6 {
+    padding-bottom: 80px;
+  }
+  .container6 .title {
+    font-size: 2rem;
+  }
+  .container6 .title .text {
+    font-size: 1.2rem;
+  }
+  .container6 .content .card {
+    width: 100%;
+  }
+  .container6 .content .card .card2 {
+    bottom: 23%;
+  }
+  .container6 .content .card .card2 .text1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .container6 .trans .color .text {
+    width: 100%;
+  }
+}

@@ -1,0 +1,247 @@
+.container1 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../../images/graduation\ image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--1st-color);
+}
+.container1 .header {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.381);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 5px;
+  padding: 40px 20px;
+}
+
+.container1 .header .row1 {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.container1 .header .row1 .title {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 2rem;
+  gap: 5px;
+}
+.container1 .header .row1 .title .icon {
+  aspect-ratio: 1;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../images/C-DAC.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.container1 .header .row1 .socials {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 2rem;
+  gap: 25px;
+}
+.container1 .header .row1 .socials .icon {
+  height: 50px;
+  cursor: pointer;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+}
+
+.container1 .header .row1 .socials .icon:nth-child(1):hover {
+  color: rgb(48, 93, 241);
+  background-color: #fff;
+}
+.container1 .header .row1 .socials .icon:nth-child(2):hover {
+  color: rgb(202, 37, 139);
+  background-color: #fff;
+}
+.container1 .header .row1 .socials .icon:nth-child(3):hover {
+  color: rgb(104, 143, 240);
+  background-color: #fff;
+}
+.container1 .header .row1 .socials .icon:nth-child(4):hover {
+  color: red;
+  background-color: #fff;
+}
+.container1 .header .row2 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.container1 .header .row2 .textAnimation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32%;
+  width: 100%;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.container1 .header .row2 .textAnimation::before {
+  content: 'Join CDAC ';
+  animation: typing 10s linear infinite;
+}
+.container1 .header .row2 .textAnimation::after {
+  content: '|';
+  animation: cursor 1s ease-in-out infinite;
+}
+
+.container1 .header .row2 .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.container1 .header .row2 .iconAnimation {
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  animation: iconAnimate 1.5s linear infinite;
+}
+
+@media (max-width: 990px) {
+  .container1 .header .row1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container1 .header .row2 .textAnimation {
+    font-size: 2rem;
+  }
+  .container1 .header .row2 .text {
+    font-size: 1.5rem;
+  }
+  .container1 .header .row1 .socials {
+  }
+}
+
+@keyframes cursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes typing {
+  0%,
+  30%,
+  65%,
+  94%,
+  100% {
+    content: 'Join CDAC ';
+  }
+  2%,
+  28% {
+    content: 'Join CDAC Un';
+  }
+  4%,
+  27% {
+    content: 'Join CDAC Uni';
+  }
+  6%,
+  26% {
+    content: 'Join CDAC Univ';
+  }
+  8%,
+  25% {
+    content: 'Join CDAC Unive';
+  }
+  10%,
+  24% {
+    content: 'Join CDAC Univer';
+  }
+  12%,
+  23% {
+    content: 'Join CDAC Univers';
+  }
+  14%,
+  22% {
+    content: 'Join CDAC Universi';
+  }
+  16%,
+  21% {
+    content: 'Join CDAC Universit';
+  }
+  18%,
+  20% {
+    content: 'Join CDAC University';
+  }
+  35%,
+  60% {
+    content: 'Join CDAC Best';
+  }
+  40%,
+  55% {
+    content: 'Join CDAC Best University';
+  }
+  45%,
+  50% {
+    content: 'Join CDAC Best University Ever';
+  }
+  70%,
+  93% {
+    content: 'Join CDAC E';
+  }
+  72%,
+  92% {
+    content: 'Join CDAC En';
+  }
+  74%,
+  91% {
+    content: 'Join CDAC Enr';
+  }
+  76%,
+  90% {
+    content: 'Join CDAC Enro';
+  }
+  78%,
+  89% {
+    content: 'Join CDAC Enroll';
+  }
+  80%,
+  88% {
+    content: 'Join CDAC Enroll N';
+  }
+  82%,
+  87% {
+    content: 'Join CDAC Enroll No';
+  }
+  84%,
+  86% {
+    content: 'Join CDAC Enroll Now';
+  }
+}

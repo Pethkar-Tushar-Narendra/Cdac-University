@@ -1,0 +1,133 @@
+.container9 {
+  width: 100vw;
+  /* min-height: 50vh; */
+  position: relative;
+  color: var(--1st-color);
+  background-color: var(--2nd-color);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  padding: 60px 0px;
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+.container9 .wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container9 .gridContainer {
+  z-index: 10;
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+.container9 .gridContainer .grid {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  /* border: 2px solid red; */
+}
+.container9 .gridContainer .grid .logo {
+  background-image: url('../../images/C-DAC.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+.container9 .gridContainer .grid .text {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.container9 .gridContainer .grid .head {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.container9 .gridContainer .grid input {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 30px;
+}
+.container9 .gridContainer .grid input::placeholder {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.container9 .gridContainer .grid .button {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: rgb(210, 57, 57);
+}
+.container9 .gridContainer .grid .buttonclick1 {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 5px solid rgba(90, 38, 38, 0.324);
+  background-color: rgb(210, 57, 57);
+}
+.container9 .gridContainer .grid .buttonclick2 {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 5px solid rgba(90, 38, 38, 0.324);
+  background-color: rgb(56, 126, 153);
+}
+.container9 .footer {
+  margin: 20px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  background-color: grey;
+  color: var(--1st-color);
+  font-size: 1rem;
+  font-weight: 500;
+  width: 90%;
+  height: 50px;
+  bottom: 10px;
+}
+
+@media (max-width: 990px) {
+  .container9 {
+    padding-top: 40px;
+    min-height: 100vh;
+  }
+  .container9 .gridContainer {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

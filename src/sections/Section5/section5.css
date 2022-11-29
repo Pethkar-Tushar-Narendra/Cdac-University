@@ -1,0 +1,114 @@
+.container3 {
+  width: 100vw;
+  position: relative;
+  color: var(--1st-color);
+  background-color: var(--2nd-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 20px;
+  padding-bottom: 150px;
+}
+
+.container3 .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.container3 .title {
+  font-weight: 700;
+  font-size: 3rem;
+  height: 40vh;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+}
+.container3 .title .name {
+  height: 20%;
+}
+.container3 .title .name .highlighter {
+  color: var(--3rd-color);
+}
+.container3 .title .text {
+  height: 30%;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.container3 .title .icon {
+  height: 50%;
+}
+.container3 .title .icon .animateicon {
+  animation: iconAnimate 1.5s linear infinite;
+  font-size: 3rem;
+}
+.container3 .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  z-index: 10;
+}
+.container3 .content .card {
+  width: 30%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid var(--1st-color);
+}
+.container3 .content .card .card1 {
+  width: 100%;
+  height: 65%;
+  border-bottom: 1px solid var(--1st-color);
+}
+.container3 .content .card .card2 {
+  width: 100%;
+  height: 35%;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.container3 .content .card .card2 .text1 {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+@media (max-width: 990px) {
+  .container3 {
+    padding-bottom: 80px;
+  }
+  .container3 .title {
+    font-size: 2rem;
+  }
+  .container3 .title .text {
+    font-size: 1.2rem;
+  }
+  .container3 .content .card {
+    width: 100%;
+  }
+  .container3 .content .card .card2 .text1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#thirteen {
+  background-image: url('../../images/background/13.webp');
+  background-position: center;
+  background-size: cover;
+}
+#fourteen {
+  background-image: url('../../images/background/14.webp');
+  background-position: center;
+  background-size: cover;
+}
+#fifteen {
+  background-image: url('../../images/background/15.jpg');
+  background-position: center;
+  background-size: cover;
+}
